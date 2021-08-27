@@ -1,0 +1,43 @@
+.ProductCard {
+  width: 28rem;
+  border: 2px solid var(--color-main);
+  border-radius: 6px;
+  height: 42rem;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.ProductCard img {
+  width: 100%;
+  height: 23rem;
+  padding: 1rem 0;
+}
+
+.ProductCard h2 {
+  margin-top: .5rem;
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+.ProductCard span {
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+.ProductCard main {
+  display: flex;
+  flex-direction: column;
+}
+
+.ProductCard footer {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ProductCard footer button {
+  margin-top: 0;
+}

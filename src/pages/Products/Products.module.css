@@ -1,0 +1,15 @@
+.Products h1 {
+  font-size: 2.4rem;
+}
+
+.Products ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Products li {
+  margin: 1rem;
+  list-style: none;
+}
