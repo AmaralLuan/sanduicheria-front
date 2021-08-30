@@ -23,7 +23,6 @@ function App() {
           ?
           <>
             <Route exact path='/' render={() => <System token={token} setToken={setToken}/>} />
-            
           </>  
           :
           <Route path='/' render={() => <Login setToken={setToken} />} />

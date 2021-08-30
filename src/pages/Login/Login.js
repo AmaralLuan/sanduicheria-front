@@ -12,6 +12,7 @@ function Login({setToken}) {
   
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = useCallback((event) => {
     event.preventDefault();
@@ -23,6 +24,7 @@ function Login({setToken}) {
       password
     }).then((response) =>{
       try {
+        setLoading(true)
         const user = response.data.token;
         localStorage.setItem('@Sanduicheria:user', JSON.stringify(user));
         setToken(user);
@@ -48,6 +50,8 @@ function Login({setToken}) {
 
         <Button type='submit' onClick={submitValues}>Login</Button>
       </Form>
+      
+      {loading ? <h3>Carregando...</h3> : null}
     </div>
   )
 }

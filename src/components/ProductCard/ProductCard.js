@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './ProductCard.module.css'
-import xfrango from '../../assets/xfrango.png';
 import Button from '../Button/Button';
 
 function ProductCard(props) {

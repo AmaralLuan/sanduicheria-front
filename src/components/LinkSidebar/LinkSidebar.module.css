@@ -1,0 +1,19 @@
+.LinkSidebar {
+  text-decoration: none;
+  color: #ffffff;
+  background: none;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  padding: 1rem;
+  transition: all .2s;
+}
+
+.LinkSidebar:hover {
+  filter: brightness(80%);
+  background-color: var(--color-secondary);
+}
+
+.LinkSidebar span {
+  font-size: 2.4rem;
+}
