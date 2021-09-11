@@ -3,6 +3,7 @@ import styles from './Products.module.css';
 
 import Axios from 'axios'
 import ProductCard from '../../components/ProductCard/ProductCard';
+import { Link } from 'react-router-dom';
 
 function Products({token}) {
   const [data, setData] = useState([])
@@ -26,11 +27,15 @@ function Products({token}) {
         {
           Array.isArray(data) ? data.map((product) => (
             <li key={product.id}>
-              <ProductCard
-                img={product.product_img}
-                title={product.product_name}
-                description={product.product_description}
-                price={product.product_price} />
+              <Link to={`/products/${product.id}`} >
+                <ProductCard
+                  img={product.product_img}
+                  title={product.product_name}
+                  description={product.product_description}
+                  price={product.product_price}
+                  />
+                  
+              </Link>  
             </li>
           )) : null}
       </ul>

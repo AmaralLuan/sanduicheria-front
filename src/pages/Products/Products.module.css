@@ -13,3 +13,8 @@
   margin: 1rem;
   list-style: none;
 }
+
+.Products a {
+  color: black;
+  text-decoration: none;
+}

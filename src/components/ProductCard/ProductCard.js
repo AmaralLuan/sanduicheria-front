@@ -16,7 +16,7 @@ function ProductCard(props) {
 
       <footer>        
         <h2>R$ {props.price}</h2>
-        <Button>Comprar</Button>
+        <Button>Ver mais</Button>
       </footer>  
     </div>
   )

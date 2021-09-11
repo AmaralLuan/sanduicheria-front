@@ -1,0 +1,17 @@
+.ProductPageTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.ProductPageTitle button {
+  margin: 0;
+}
+
+.ProductPage img {
+  width: 30rem;
+  height: auto;
+}

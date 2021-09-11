@@ -1,0 +1,21 @@
+.Cart {
+  height: 85%;
+}
+
+.Cart ul{
+  height: 100%;
+}
+
+.Cart li {
+  list-style: none;
+}
+
+.Cart footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Cart footer button {
+  margin: 0;
+}

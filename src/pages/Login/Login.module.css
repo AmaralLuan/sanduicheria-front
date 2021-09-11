@@ -12,3 +12,7 @@
   width: 300px;
   color: var(--color-main);
 }
+
+.Login form h1 {
+  margin: 1rem auto;
+}

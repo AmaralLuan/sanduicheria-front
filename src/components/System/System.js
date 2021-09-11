@@ -1,10 +1,11 @@
 import React from 'react'
 import styles from './System.module.css'
 import Sidebar from '../Sidebar/Sidebar'
-import Dashboard from '../../pages/Dashboard/Dashboard';
 import Header from '../Header/Header';
 import LinkSidebar from '../LinkSidebar/LinkSidebar';
-import { useHistory} from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import Dashboard from '../../pages/Dashboard/Dashboard';
+
 
 function System({setToken}) {
   const history = useHistory();
@@ -18,9 +19,11 @@ function System({setToken}) {
           <LinkSidebar onClick={() => history.push('/products')}>
             <span>Produtos</span>
           </LinkSidebar>
+
+          
         </Sidebar>
 
-        <Dashboard />
+        <Dashboard />  
       </main>
       
     </section>
